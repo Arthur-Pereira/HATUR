@@ -1,2 +1,2 @@
 # HATUR
- Primeiro Repositório 
+ Meu primeiro site feito em HTML e CSS.
