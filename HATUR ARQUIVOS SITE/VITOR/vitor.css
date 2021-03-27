@@ -1,0 +1,198 @@
+@charset "UTF-8";
+
+/* reset */
+
+li {
+    list-style: none;
+    color: white;
+}
+
+i {
+    color: white;
+}
+
+/*Apresentação*/
+
+.painel-perfil {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    min-height: 70vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px 100px;
+}
+
+.painel-perfil h1 {
+    color: white;
+    font-size: 40px;
+}
+
+.painel-perfil .borda-inferior {
+    width: 100%;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+}
+
+.painel-perfil nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.painel-perfil nav .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.painel-perfil nav .info li {
+    margin-right: 5px;
+}
+
+.painel-perfil nav .redes-socias a {
+    margin: 5px;
+}
+
+.painel-perfil nav .info li:before {
+    content: " | " ;
+}
+
+.painel-perfil nav .info li:first-child:before {
+        content: none;
+}
+
+@media (max-width: 700px) {
+    .painel-perfil {
+        min-height: 100vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .painel-perfil nav .info {
+        flex-direction: column;
+    }
+
+    .painel-perfil nav .info li:first-child:before {
+        content: " | " ;}
+}
+
+@media (max-width: 414px) {
+    .painel-perfil {
+        padding: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .painel-perfil h1 {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    body {
+      background: url(../IMAGENS/background-perfil-tablet/vitor-tablet.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+}
+
+@media (max-width: 415px) {
+    body {
+      background: url(../IMAGENS/background-perfil-mobile/vitor-mobile.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+}
+
+/*Mídias*/
+
+h1.titulo-midias {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+.midias {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px;
+    margin-bottom: -50px;
+}
+
+.midias img {
+    background: rgba(255, 255, 255, 0.3);
+    width: 350px;
+    box-shadow: 6px 6px 6px black;
+    margin: 40px 30px;
+    transition: 0.3s;
+}
+
+.midias img:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 400px;
+    box-shadow: 6px 6px 6px black;
+    margin: 0px;
+}
+
+@media (max-width: 800px) {
+    .midias img {
+        width: 300px;
+    }
+}
+
+/* Outros */
+
+#outros {
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 50px;
+}
+
+#outros h2 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+#outros div {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 50px;
+}
+
+#outros div a {
+    padding: 10px;
+    text-align: center;
+}
+
+#outros div a img {
+    box-shadow: 8px 8px 8px black;
+    width: 150px;
+    opacity: 0.9;
+}
+
+#outros div a img:hover {
+    opacity: 1;
+}
+
+
