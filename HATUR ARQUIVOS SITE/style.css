@@ -61,6 +61,12 @@ header a {
     header {flex-direction: column;}
 }
 
+@media (max-width: 320px) {
+    header 
+    {flex-direction: column; 
+    font-size: 5px;
+    }
+}
 /* Frase inicial */
 
 .frase-inicial {
